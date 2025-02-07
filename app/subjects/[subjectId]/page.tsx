@@ -15,16 +15,16 @@ export default function SubjectPage({ params }: { params: { subjectId: string } 
       </Link>
       <h1 className="text-3xl font-bold mb-8">{subject.name}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Link href={`/subjects/${subject.id}/exams`}>
+        <Link href={`/subjects/${subject.id}/provas`}>
           <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
-            <h2 className="text-xl font-semibold mb-2">Exams</h2>
-            <p className="text-gray-600">View past exams and practice tests</p>
+            <h2 className="text-xl font-semibold mb-2">Provas</h2>
+            <p className="text-gray-600">Acesso a provas passadas</p>
           </div>
         </Link>
-        <Link href={`/subjects/${subject.id}/activities`}>
+        <Link href={`/subjects/${subject.id}/listas`}>
           <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow">
-            <h2 className="text-xl font-semibold mb-2">Activities</h2>
-            <p className="text-gray-600">Access homework and assignments</p>
+            <h2 className="text-xl font-semibold mb-2">Listas</h2>
+            <p className="text-gray-600">Acesso a listas passadas</p>
           </div>
         </Link>
       </div>

@@ -2,9 +2,9 @@ import Link from "next/link"
 import { subjects } from "../../../../data/subjects"
 import { exams, activities } from "../../../../data/materials"
 
-export default function MaterialsPage({ params }: { params: { subjectId: string; type: "exams" | "activities" } }) {
+export default function MaterialsPage({ params }: { params: { subjectId: string; type: "provas" | "atividades" } }) {
   const subject = subjects.find((s) => s.id === params.subjectId)
-  const materials = params.type === "exams" ? exams : activities
+  const materials = params.type === "provas" ? exams : activities
 
   if (!subject) {
     return <div>Subject not found</div>
@@ -36,12 +36,19 @@ export default function MaterialsPage({ params }: { params: { subjectId: string;
             </div>
           ))}
       </div>
-      <Link
-        href="/submit"
-        className="fixed bottom-8 right-8 bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-colors"
-      >
-        Submit New
-      </Link>
+      <div className="fixed bottom-8 right-8 flex items-center gap-4">
+  <img 
+    src="/foguinho3.gif" 
+    alt="ícone" 
+    className="w-7 h-7"
+  />
+  <Link 
+    href="/submit"
+    className="bg-green-600 text-white px-4 py-2 rounded shadow-lg hover:bg-green-700 transition-colors"
+  >
+    Novo Envio
+  </Link>
+</div>
     </div>
   )
 }
