@@ -1,24 +1,23 @@
 export default function AboutPage() {
     return (
-      <div className="max-w-2xl mx-auto">
-        <h1 className="text-3xl mb-6 font-semibold">Sobre nós</h1>
-        <p className="mb-4">
+      <div className="max-w-2xl mx-auto px-4 sm:px-6">
+        <h1 className="text-2xl sm:text-3xl mb-4 sm:mb-6 font-semibold">Sobre nós</h1>
+        <p className="text-sm sm:text-base mb-4">
           Esta é uma plataforma que foi criada pelos próprios alunos da UNIFESP do Instituto de Ciência e Tecnologia com o objetivo de apoiar o aprendizado e o aprimoramento acadêmico dos estudantes da nossa Universidade Federal.
         </p>
-        <p className="mb-4">
+        <p className="text-sm sm:text-base mb-4">
           Todo o dinheiro arrecadado pelo site será integralmente doado para instituições de caridade, dedicado a apoiar causas nobres envolvendo famílias carentes. A nossa missão é fazer a diferença, enquanto construímos uma comunidade de aprendizado para todos os alunos da UNIFESP.
         </p>
-        <h2 className="text-2xl font-semibold mt-6 mb-4">Nossa Missão</h2>
-        <p className="mb-4">
+        <h2 className="text-xl sm:text-2xl font-semibold mt-4 sm:mt-6 mb-3 sm:mb-4">Nossa Missão</h2>
+        <p className="text-sm sm:text-base mb-4">
           Capacitar os alunos com acesso fácil a materiais de estudo de alta qualidade, promovendo uma experiência de aprendizado mais eficiente e eficaz.
         </p>
-        <h2 className="text-2xl font-semibold mt-6 mb-4">Contato</h2>
-        <p>
+        <h2 className="text-xl sm:text-2xl font-semibold mt-4 sm:mt-6 mb-3 sm:mb-4">Contato</h2>
+        <p className="text-sm sm:text-base">
           Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato conosco em{" "}
           <a href="mailto:info@studymaterialhub.com" className="text-blue-600 hover:underline">
-            info@studymaterialhub.com {/* poe seu email se quiser ou apaga esse paragrafo */}
+            info@studymaterialhub.com
           </a>
-          .
         </p>
   
         {/* Seção Hero para agradecer aos desenvolvedores */}
