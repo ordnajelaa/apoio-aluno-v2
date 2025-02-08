@@ -8,7 +8,7 @@ export const exams = [
     },
     {
       id: "biology-final-2022",
-      subjectId: "biology",
+      subjectId: "calculo-1",
       title: "2022 Final Exam",
       description: "Comprehensive exam covering all course material",
       fileUrl: "/files/biology-final-2022.pdf",
