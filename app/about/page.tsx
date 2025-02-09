@@ -26,10 +26,12 @@ export default function AboutPage() {
           <p className="mb-4 text-lg">Gostaríamos de agradecer aos incríveis desenvolvedores que tornaram este projeto possível:</p>
           <ul className="list-disc list-inside mx-auto inline-block text-left">
             <li>Marcos Hollmann</li>
+            <li>Alejandro Araujo</li>
             <li>Shogo Miyazaki</li>
             <li>Felipe Calderaro</li>
             <li>Lucas Ferrara</li>
           </ul>
+
         </div>
       </div>
     );
