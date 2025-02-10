@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Image src="/logo-unifesp.png" alt="Logo" width={80} height={80}/>
+            <Image src="/logo-unifesp.png" alt="Logo" width={100} height={100}/>
           </Link>
           <Link href="/" className="flex items-center">
           <span className="text-xl sm:text-3xl font-semi text-white">Apoio Aluno</span>

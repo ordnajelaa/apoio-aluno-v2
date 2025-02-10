@@ -12,11 +12,11 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {subjects.map((subject) => (
           <Link key={subject.id} href={`/subjects/${subject.id}`} className="block h-full">
-            <div className="bg-white shadow-md rounded-lg p-4 sm:p-6 hover:shadow-lg hover:scale-105 transition-all duration-300 h-full flex flex-col">
-              <h2 className="text-lg sm:text-xl font-semibold mb-2">{subject.name}</h2>
-              <p className="text-sm sm:text-base text-gray-600 mb-4">{subject.description}</p>
+            <div className="bg-white shadow-md rounded-lg p-4 sm:p-12 hover:shadow-lg hover:scale-105 transition-all duration-300 h-full flex flex-col">
+              <h2 className="text-lg sm:text-xl font-semibold mb-2 text-center">{subject.name}</h2>
+              <p className="text-sm sm:text-base text-gray-600 mb-4 text-center">{subject.description}</p>
               <div className="flex items-center justify-center flex-grow">
-                <Image src={subject.icon || "/placeholder.svg"} alt={subject.name} width={80} height={80} className="object-contain sm:w-[100px] sm:h-[100px]" />
+                
               </div>
             </div>
           </Link>
