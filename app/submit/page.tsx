@@ -3,8 +3,6 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { subjects } from "../../data/subjects"
-import { storage } from "../../data/firebase"
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage"
 
 export default function SubmitPage() {
   const router = useRouter()
@@ -16,24 +14,11 @@ export default function SubmitPage() {
     file: null as File | null,
   })
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    
-    try {
-      if (formData.file) {
-        const fileName = `${Date.now()}-${formData.file.name}`
-        const fileRef = ref(storage, `uploads/${fileName}`)
-        await uploadBytes(fileRef, formData.file)
-        const downloadUrl = await getDownloadURL(fileRef)
-        console.log("Arquivo enviado:", downloadUrl)
-      }
-      
-      alert("Envio realizado com sucesso!")
-      router.push("/")
-    } catch (error) {
-      console.error("Erro ao enviar arquivo:", error)
-      alert("Erro ao enviar arquivo. Tente novamente.")
-    }
+    console.log("Submitted:", formData)
+    alert("Submission successful!")
+    router.push("/")
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -90,7 +75,7 @@ export default function SubmitPage() {
         </div>
 
         {/* Upload do Arquivo */}
-          <div>
+        <div>
           <label htmlFor="file" className="block mb-2">
             Arquivo (PDF/IMG)
           </label>
