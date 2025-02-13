@@ -1,22 +1,22 @@
 export const subjects = [
   {
     id: "logica-programacao",
-    name: "Lógica de Programação",
+    name: "LP",
     description: "Fundamentos da programação e resolução de problemas"
   },
   {
     id: "calculo-1",
-    name: "Cálculo 1",
+    name: "CUV",
     description: "Introdução ao cálculo diferencial e integral"
   },
   {
     id: "quimica-geral",
-    name: "Química Geral",
+    name: "QG",
     description: "Princípios fundamentais da química"
   },
   {
     id: "fbm",
-    name: "Fundamentos de Biologia Moderna - FBM",
+    name: "FBM",
     description: "Conceitos modernos em biologia"
   },
   {
@@ -32,17 +32,17 @@ export const subjects = [
   // Adicionando as outras 3 matérias para completar as 9
   {
     id: "MD",
-    name: "Matemática Discreta",
+    name: "MD",
     description: "Estruturas matemáticas fundamentais para ciência da computação"
   },
   {
     id: "SEDO",
-    name: "SEDO Calculo 2",
+    name: "SEDO",
     description: "Modelagem e análise de fenômenos dinâmicos através de equações diferenciais."
   },
   {
     id: "geometria-analitica",
-    name: "Geometria Analítica",
+    name: "GA",
     description: "Estudo de geometria usando álgebra e análise"
   }
 ]
