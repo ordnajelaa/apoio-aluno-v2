@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { subjects } from "../data/subjects"
-import Image from "next/image"
 
 export default function Home() {
   return (
