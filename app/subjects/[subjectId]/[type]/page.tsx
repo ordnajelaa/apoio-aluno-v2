@@ -56,7 +56,7 @@ export default function TypePage({ params }: { params: { subjectId: string; type
         <h1 className="text-3xl font-bold">{typeTitle} de {subject.name}</h1>
         <Link 
           href="/submit" 
-          className="bg-green-600 text-white px-4 py-2 rounded shadow-lg hover:bg-green-700 transition-colors"
+          className="bg-green-600 text-white px-4 py-2 rounded shadow-lg hover:bg-green-700 transition-colors sm:text-base md:text-lg whitespace-nowrap"
         >
           Novo Envio
         </Link>
