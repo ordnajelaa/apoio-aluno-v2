@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import type React from "react"; // Added import for React
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { AppSidebar } from "@/components/ui/app-sidebar"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,17 +17,24 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <Header />
-        <main className="container mx-auto px-2 py-16 flex-grow">{children}</main>
+    <html lang="pt-BR">
+      <body className={`${inter.className} min-h-screen flex`}>
+        <SidebarProvider>
+          <AppSidebar />
+          <div className="flex-1 flex flex-col">
+            <Header />
+            <main className="flex-1 p-6">
+              <SidebarTrigger />
+              {children}
+            </main>
+          </div>
+        </SidebarProvider>
         <SpeedInsights />
         <Analytics />
       </body>

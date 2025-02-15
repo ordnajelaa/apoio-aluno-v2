@@ -26,7 +26,7 @@ export const subjects = [
   },
   {
     id: "aed-1",
-    name: "AED 1",
+    name: "AED I",
     description: "Algoritmos e Estruturas de Dados 1"
   },
   // Adicionando as outras 3 matérias para completar as 9
@@ -44,5 +44,53 @@ export const subjects = [
     id: "geometria-analitica",
     name: "GA",
     description: "Estudo de geometria usando álgebra e análise"
-  }
+  },
+  {
+    id: "Calculo-Numerico",
+    name: "CN",
+  },
+  {
+    id: "Algebra-Linear",
+    name: "AL I",
+  },
+  {
+    id: "Algebra-Linear",
+    name: "AL II",
+  },
+  {
+    id: "Fenomenos-Magneticos",
+    name: "FEMAG",
+  },
+  {
+    id: "Calculo-3",
+    name: "CVV",
+  },
+  {
+    id: "Circuitos-Digitais",
+    name: "CD",
+  },
+  {
+    id: "AED-2",
+    name: "AED II",
+  },
+  {
+    id: "Sistemas-Operacionais",
+    name: "SO",
+  },
+  {
+    id: "PAA",
+    name: "PAA",
+  },
+  {
+    id: "PROBE",
+    name: "PROBE",
+  },
+  {
+    id: "AOC",
+    name: "AOC",
+  },
+  {
+    id: "POO",
+    name: "POO",
+  },
 ]
